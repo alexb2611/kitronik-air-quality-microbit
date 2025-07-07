@@ -18,6 +18,7 @@ isort>=5.12.0            # Import sorting
 
 # Development tools
 watchdog>=3.0.0          # File watching for auto-test runs
+pytest-watch>=4.2.0      # Auto-run tests on file changes
 rich>=13.0.0             # Beautiful terminal output
 
 # Optional: For advanced testing scenarios

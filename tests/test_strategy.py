@@ -340,25 +340,4 @@ class AirQualityMonitor:
         self.hardware.write_display(air_quality_text, 3)
 
 
-if __name__ == "__main__":
-    # Example of how to use the testable classes
-    print("Air Quality Monitor - Testable Architecture Demo")
-    
-    # Create mock hardware for demonstration
-    mock_hardware = MockHardware()
-    monitor = AirQualityMonitor(mock_hardware)
-    
-    # Test RTC setup
-    print("Testing RTC setup...")
-    rtc_updated = monitor.setup_rtc_if_needed()
-    print(f"RTC updated: {rtc_updated}")
-    
-    # Test sensor reading
-    print("Testing sensor reading...")
-    reading = monitor.take_reading()
-    print(f"Reading: {reading}")
-    
-    # Test display update
-    print("Testing display update...")
-    monitor.update_display()
-    print(f"Display content: {mock_hardware.display_content}")
+
